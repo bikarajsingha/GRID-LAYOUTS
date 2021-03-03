@@ -1,0 +1,132 @@
+html {
+    box-sizing: border-box;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+#container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: calc(100vh);
+}
+#header {
+    background: rgb(40, 40, 40);
+    display: grid;
+    align-items: center;
+    grid-template-columns: 40px 1fr;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    padding: 15px;
+}
+.item button {
+    background: rgb(90, 90, 90);
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-radius: 3.2px;
+    height: 50px;
+    padding: 15px;
+}
+.item i {
+    color: rgb(170, 170, 170);
+}
+.h_item1 i {
+    font-size: 34px;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    
+    border-radius: 5px;
+}
+.h_item3:hover button, .h_item4:hover button, .h_item5:hover button, .h_item6:hover button{
+    background-color: rgba(173, 175, 175, 0.55);
+}
+#body {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background: rgb(60, 60, 60);
+}
+.b_item1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.upper {
+    height: 30px;
+    background: rgb(30, 30, 30);
+    display: grid;
+    grid-template-columns: repeat(5, 40px);
+    align-items: center;
+}
+.upper button {
+    border-radius: 2px;
+    background: rgb(90, 90, 90);
+    color: white;
+    height: 20px;
+    border: none;
+}
+.html {
+    margin-left: 19px;
+}
+.upper .go_right {
+    margin-left: 10px;
+}
+h2 {
+    margin-left: 5px;
+    color: rgb(170, 170, 170);
+}
+.upper .go_left {
+    grid-column: 16/17;
+    margin-right: 10px;
+}
+.lower {
+    width: 100%;
+    height: 100%;
+}
+textarea {
+    background: rgb(40, 40, 40);
+    border: none;
+    width: 100%;
+    height: 85%;
+    resize: none;
+}
+.b_item2 iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+#footer {
+    background: rgb(40, 40, 40);
+    border: 1px solid rgb(40, 40, 40);
+    display: grid;
+    align-items: center;
+}
+ul {
+    list-style: none;
+    color: rgb(170, 170, 170);
+    margin-left: 5px;
+    font-size: 13px;
+}
+li {
+    display: block;
+    float: left;
+    padding: 5px;
+    position: relative;
+}
+li:after {
+    content: '';
+    height: 28px;
+    width: 1.5px;
+    background-color:rgb(90, 90, 90);
+    position: absolute;
+    margin-left: 5px;
+    bottom: 0px;
+}
