@@ -1,0 +1,82 @@
+html {
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+body {
+    padding: 90px 0px;
+}
+.post {
+    display: grid;
+    grid-template-columns: 150px 540px 220px;
+    grid-column-gap: 60px;
+    grid-row-gap: 10px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2 {
+    font-size: 80px;
+    font-style: italic;
+    font-weight: 100;
+    grid-column: 2/3;
+    margin: 0px;
+}
+p {
+    grid-column: 2/3;
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+}
+.right {
+    position: relative;
+    margin-left: 15px;
+}
+.right:before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 2px;
+    background-color: orange;
+    left: -15px;
+}
+.right img {
+    width: 100%;
+    object-fit: contain;
+}
+.rightT {
+    grid-row: span 5;
+}
+blockquote {
+    grid-column: 1/-1;
+    text-align: center;
+}
+blockquote p {
+    font-size: 60px;
+    font-style: italic;
+}
+figure {
+    grid-column: 1/-1;
+    margin-left: 0px;
+}
+figcaption {
+    font-size: 10px;
+}
+.left {
+    grid-column: 1/2;
+    position: relative;
+}
+.left:after {
+    position: absolute;
+    top: 0;
+    left: 150px;
+    content: '';
+    height: 100%;
+    width: 2px;
+    background-color: orange;
+}
